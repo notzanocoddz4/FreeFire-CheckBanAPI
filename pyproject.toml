@@ -2,7 +2,11 @@
 name = "freefire-checkbanapi"
 version = "0.1.0"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "flask",
+    "requests",
+    "gunicorn"
+]
 
 [tool.vercel]
 entrypoint = "app.api:app"
